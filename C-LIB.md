@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ Installer ](install.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Installation ](install.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 ## 📦 What’s Included  
 This engine contains the **exact llama.cpp components FireGem uses**, nothing more.
@@ -161,4 +161,4 @@ Contributions are welcome — especially improvements to:
 - documentation  
 - platform support  
 
-[⬅️ Back to Main](README.md) | [➡️ Installer ](install.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Installation ](install.md) | [➡️ CVBGOD Guide](CVBGOD.md)

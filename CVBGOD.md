@@ -1,4 +1,22 @@
-<img src="cvbgod-bnr.png">
+[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.bat)
+
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
+ ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
+
+<a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
+<img 
+    src="Copilot_20260701_210847.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
 <div class="markdown-body entry-content container-lg" style="box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0px auto; padding: 45px; color: #e6edf3; background-color: #0d1117; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; font-size: 16px; line-height: 1.5; word-wrap: break-word;">
     <h1 style="box-sizing: border-box; margin-top: 24px; margin-bottom: 16px; font-size: 2em; font-weight: 600; line-height: 1.25; padding-bottom: 0.3em; border-bottom: 1px solid #30363d; color: #f0f6fc;">
         🧍 CVBGODS's GGML-LLAMA-MSVC-INSTALLER
@@ -71,3 +89,4 @@ LLM.DECLARATION: BEGIN_ASSISTANT_CONSTRUCTION
 ```
 
 ---
+[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.bat)

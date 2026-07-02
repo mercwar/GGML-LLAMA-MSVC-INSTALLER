@@ -1,3 +1,5 @@
+[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](SETUP.md)
+
 # 📁 **FireGem Documentation System (Hybrid Edition)**
 
 ```
@@ -123,8 +125,6 @@ After installation:
 3. Use Copilot to generate your assistant  
 
 ---
-
-[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](SETUP.md)
 ```
+[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](SETUP.md)
 
----

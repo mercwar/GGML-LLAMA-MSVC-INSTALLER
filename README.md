@@ -14,7 +14,7 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
 <img 
-    src="image_99efa0f4.png" 
+    src="Copilot_20260701_222007.png" 
     alt="Mercwar Constellation" 
     style="width:100%; height:auto;"
 />

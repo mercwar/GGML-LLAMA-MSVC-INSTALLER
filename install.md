@@ -1,4 +1,4 @@
-
+[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](C-LIB.md)
 
 ## 🔧 FireGem / Llama.cpp MSVC Build System (Client Installer)
 
@@ -139,3 +139,4 @@ echo.
 pause
 ```
 
+[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](C-LIB.md)

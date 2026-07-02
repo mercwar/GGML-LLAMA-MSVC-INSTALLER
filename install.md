@@ -19,6 +19,25 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 This batch file installs all required build tools, clones `llama.cpp` if missing, configures it with MSVC + Ninja, builds the project, and runs tests.  
 Users simply copy/paste or click the GitHub copy button to run it.
 
+The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+
+- CLICK [here](https://aka.ms/vs/17/release/vs_BuildTools.exe) and download the Official MSVC Compiler FREE.
+- Open your new MSVC Developer Command Prompt (NOT Powershell , NOT cmd.exe).
+- You will see this in your shell window.
+
+```markdown
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.33
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools>
+  ```
+
+Paste the batch file below into the new MSVC command window, DONE!
+
+"<i>I am CVBGOD, and I have given it to you!</i>"
+
 💻  MSVC SHELL
 
 ```bat

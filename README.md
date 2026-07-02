@@ -21,7 +21,7 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 </a>
 
 
-# 📁 **FireGem Documentation System (Hybrid Edition)**
+# 💾 **FireGem Documentation System (Hybrid Edition)**
 
 ```
 /docs
@@ -42,27 +42,29 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
   
 ---
 
-#### 📘 Now the OFFICIAL Mercwar GGML LLAMA GGUF LLM AI  FIRE-GEM MAIN README.md**
+### 🌍 Now the OFFICIAL Mercwar MAIN README.md...
+
+#### 🎖 FOR <i>GGML LLAMA GGUF LLM AI FIRE-GEM </i>GOOD LUCK!
 
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
-    src="Copilot_20260701_231122" 
+    src="Copilot_20260701_231122.png" 
     alt="Mercwar " 
     style="width:100%; height:auto;"
 />
 </a>
 
-###   Welcome to the FireGem GGML‑LLAMA‑MSVC Engine documentation system.  
+###   Welcome to the 🔥 Fire- Gem 💎 GGML‑LLAMA‑MSVC Engine documentation system.   
 
-This system provides everything needed to ...
+✔️ This system provides everything needed to ...
 
 - Install
 - Compile,
 - Understand,
 - Compile
 
-The FireGem backend.
+📡 The FireGem backend.
 
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
@@ -72,7 +74,7 @@ The FireGem backend.
     style="width:100%; height:auto;"
 />
 </a>
----
+
 
 # 📑 Table of Contents
 
@@ -94,7 +96,8 @@ I have a compiled llama.cpp + ggml backend built with MSVC...
 
 ```
 
----
+##
+
 
 # 🤖 Cyborg‑Lang Summary
 

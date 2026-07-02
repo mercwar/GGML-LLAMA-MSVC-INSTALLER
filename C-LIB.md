@@ -9,6 +9,7 @@
 />
 </a>
 
+
 ## 📦 What’s Included  
 This engine contains the **exact llama.cpp components FireGem uses**, nothing more.
 
@@ -78,6 +79,14 @@ This structure is intentionally minimal.
 It contains **only** what is needed to compile and embed llama.cpp.
 
 ---
+
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="Copilot_20260701_224757.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
 ## ▶️ How to Use This Engine
 

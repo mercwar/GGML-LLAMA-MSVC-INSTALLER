@@ -1,4 +1,5 @@
-[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](SETUP.md)
+[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](CVBGOD.md)
+
 ---
 
 # 🛠 **INSTALLER.md**
@@ -63,4 +64,4 @@ After installation:
 
 ---
 ```
-[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](SETUP.md)
+[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](CVBGOD.md)

@@ -75,8 +75,8 @@ engine/
 └── cmake/       # Build system modules
 ```
 
-This structure is intentionally minimal.  
-It contains **only** what is needed to compile and embed llama.cpp.
+- This structure is intentionally minimal.  
+- It contains **only** what is needed to compile and embed llama.cpp.
 
 ---
 
@@ -130,6 +130,14 @@ llama_eval(ctx, &tok, 1);
 ```
 
 ---
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="Copilot_20260701_222007.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
 
 ## 🎯 Why This Exists  
 The official llama.cpp repository is large and includes:

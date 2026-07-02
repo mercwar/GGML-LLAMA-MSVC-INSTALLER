@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.bat)
+[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.md)
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
@@ -104,4 +104,4 @@ LLM.DECLARATION: BEGIN_ASSISTANT_CONSTRUCTION
 ```
 
 ---
-[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.bat)
+[⬅️ Back to Main](README.md) | [➡️ Install Shell Script](install.md)

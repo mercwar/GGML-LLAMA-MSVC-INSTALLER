@@ -13,6 +13,13 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 
 ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
 
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com">
+<img 
+    src="ChatGPT%20Image%20Jul%201%2C%202026%2C%2010_29_42%20PM.png" 
+    alt="Mercwar" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
 ## 🔧 FireGem / Llama.cpp MSVC Build System (Client Installer)
 

@@ -8,6 +8,8 @@
 />
 </a>
 
+The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+
  ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">

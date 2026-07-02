@@ -6,7 +6,7 @@
 />
 </a>
 
-The Free MSVC Compiler can be downloaded [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 
 ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
 

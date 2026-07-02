@@ -46,17 +46,16 @@ Into portable MSVC libs.
 - Ideal for robot runtimes  
 
 ---
-
+```
 ## Cyborg‑Lang Summary
 
 ```
 BUILD.INTENT: PREPARE_LLAMA_ENGINE
 BUILD.OUTPUT: MSVC_OBJECTS
 BUILD.PURPOSE: ENABLE_LLM_ASSISTANT
-```
 
----
 ```
+---
 [⬅️ Back to Main](README.md) | [➡️ C Libs ](C-LIB.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 

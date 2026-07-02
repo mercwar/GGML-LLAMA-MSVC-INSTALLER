@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ Usage Guide](USAGE.md)
+[⬅️ Back to Main](README.md) | [➡️ C Libs ](C-LIB.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 # 🏗️ **BUILDSYSTEM.md**
 
 ```markdown
@@ -57,6 +57,6 @@ BUILD.PURPOSE: ENABLE_LLM_ASSISTANT
 
 ---
 ```
-[⬅️ Back to Main](README.md) | [➡️ Usage Guide](USAGE.md)
+[⬅️ Back to Main](README.md) | [➡️ C Libs ](C-LIB.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 

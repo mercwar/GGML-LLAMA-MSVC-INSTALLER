@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](USAGE.md)
+[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](USAGE.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 ---
 
@@ -64,4 +64,4 @@ After installation:
 
 ---
 ```
-[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](USAGE.md)
+[⬅️ Back to Main](README.md) |  [➡️ Usage Guide](USAGE.md) | [➡️ CVBGOD Guide](CVBGOD.md)

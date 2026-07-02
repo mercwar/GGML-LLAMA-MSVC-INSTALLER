@@ -22,7 +22,13 @@ Low‑level tensor operations and CPU backend.
 - `ggml-backend-impl.c`
 - `ggml-backend-dl.cpp`
 - `ggml-quants.c`
-
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com">
+<img 
+    src="https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/ChatGPT%20Image%20Jul%201%2C%202026%2C%2010_28_09%20PM.png" 
+    alt="Mercwar" 
+    style="width:100%; height:auto;"
+/>
+</a>
 ### ✔ LLAMA Core API
 The main inference logic, model loading, sampling, KV cache, graph execution.
 

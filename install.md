@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](C-LIB.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Mercwar](https://mercwar01.byethost3.com) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 ## 🔧 FireGem / Llama.cpp MSVC Build System (Client Installer)
 
@@ -139,4 +139,4 @@ echo.
 pause
 ```
 
-[⬅️ Back to Main](README.md) | [➡️ Setup Requirements](C-LIB.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Mercwar](https://mercwar01.byethost3.com) | [➡️ CVBGOD Guide](CVBGOD.md)

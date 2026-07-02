@@ -8,6 +8,7 @@
 />
 </a>
 
+
 # 🤖 **USAGE.md**
 
 ```markdown
@@ -70,6 +71,14 @@ llama_model* model = llama_load_model_from_file("models/myassistant.gguf", mpara
 ```
 
 ---
+
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="Copilot_20260701_222007.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
 ## Tokenize Input
 

@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md)
+[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 # 🔧 **SETUP.md**
 
@@ -83,5 +83,5 @@ Works with:
 
 ---
 ```
-[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md)
+[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 

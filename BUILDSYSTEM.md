@@ -1,3 +1,4 @@
+[⬅️ Back to Main](README.md) | [➡️ Usage Guide](USAGE.md)
 # 🏗️ **BUILDSYSTEM.md**
 
 ```markdown
@@ -55,9 +56,7 @@ BUILD.PURPOSE: ENABLE_LLM_ASSISTANT
 ```
 
 ---
-
-[⬅️ Back to Main](README.md) | [➡️ Usage Guide](USAGE.md)
 ```
+[⬅️ Back to Main](README.md) | [➡️ Usage Guide](USAGE.md)
 
----
 

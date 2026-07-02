@@ -41,12 +41,18 @@ Every file has a TOC.
 
 # 📘 **MAIN README.md**
 
-```markdown
-# 🌐 FireGem Engine Documentation (Hybrid Edition)
 
-Welcome to the FireGem GGML‑LLAMA‑MSVC Engine documentation system.  
-This system provides everything needed to install, compile, understand, and use the FireGem backend.
-```
+###   Welcome to the FireGem GGML‑LLAMA‑MSVC Engine documentation system.  
+
+This system provides everything needed to ...
+
+- Install
+- Compile,
+- Understand,
+- Compile
+
+The FireGem backend.
+
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
 <img 

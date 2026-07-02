@@ -1,3 +1,4 @@
+[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md)
 
 # 🔧 **SETUP.md**
 
@@ -81,9 +82,6 @@ Works with:
 - GGUF requires GGML + LLAMA  
 
 ---
-
-[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md)
 ```
-
----
+[⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md)
 

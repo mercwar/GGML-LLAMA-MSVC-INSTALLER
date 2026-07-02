@@ -10,8 +10,9 @@
 
 The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 
- ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
+### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
 
+#### <div align="center">[⬅️ Read The Source](install.bat) | [➡️ Tutorial ](SETUP.md) | [➡️ LEGAL](LEGAL.md) | [➡️ CVBGOD Guide](CVBGOD.md) </div>
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
 <img 
     src="Copilot_20260701_210847.png" 

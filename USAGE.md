@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Build System Guide](BUILDSYSTEM.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 # 🤖 **USAGE.md**
 
 ```markdown
@@ -94,6 +94,6 @@ Paste into Copilot:
 I have a compiled llama.cpp + ggml backend...
 ```
 
-[⬅️ Back to Main](README.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Back to Main](README.md) | [➡️ Build System Guide](BUILDSYSTEM.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 

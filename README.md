@@ -1,3 +1,22 @@
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
+ ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
+
+<a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
+<img 
+    src="image_99efa0f4.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
+
 [⬅️ Read The Source](INSTALL.md) | [➡️ Setup Requirements](SETUP.md)
 
 # 📁 **FireGem Documentation System (Hybrid Edition)**

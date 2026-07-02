@@ -82,7 +82,7 @@ It contains **only** what is needed to compile and embed llama.cpp.
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
-    src="Copilot_20260701_224757.png" 
+    src="Copilot_20260701_224758.png" 
     alt="Mercwar Constellation" 
     style="width:100%; height:auto;"
 />

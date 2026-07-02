@@ -25,8 +25,8 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 
 ---
 
-## 🧍 CVBGOD’s GGML‑LLAMA‑MSVC‑INSTALLER  
-### **Quick Overview (Bullet Format)**
+#### 🧍 CVBGOD’s GGML‑LLAMA‑MSVC‑INSTALLER  
+##### **Quick Overview (Bullet Format)**
 
 - **Precompiled LLM libraries**:  
   Includes **llama.cpp**, **ggml**, **GGUF support**, all compiled with **MSVC**.
@@ -56,9 +56,21 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
   .\install.bat
   ```
 
+<a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
+<img 
+    src="ChatGPT%20Image%20Jul%201%2C%202026%2C%2010_28_13%20PM.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
 
 ---
-This is written in a way Copilot understands perfectly — clear intent, explicit backend description, and a directive to generate runnable code.
+
+## 
+- This is written in a way AI understands.
+- Clear intent, explicit backend description.
+- directive to generate runnable code.
+
 ---
 
 # 🔥 **LLM Command for Microsoft Copilot**  

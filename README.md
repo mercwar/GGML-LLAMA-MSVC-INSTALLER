@@ -57,7 +57,7 @@ This system provides everything needed to install, compile, understand, and use 
 - [Usage Guide](USAGE.md)
 - [Legal & Sovereign Charter](LEGAL.md)
 
-```
+
 
 # 🚀 Quick Start
 
@@ -66,6 +66,7 @@ To generate your AI assistant using Microsoft Copilot, paste this command:
 ```
 I have a compiled llama.cpp + ggml backend built with MSVC...
 (etc — full command preserved)
+
 ```
 
 ---
@@ -78,8 +79,6 @@ CYBORG.PURPOSE: DISTRIBUTE_PRECOMPILED_LLM_BACKEND
 CYBORG.DECLARATION: CVBGOD: LIBS_DELIVERED
 ```
 
----
-```
 [⬅️ Read The Source](install.bat) | [➡️ Tutorial ](SETUP.md) | [➡️ LEGAL](LEGAL.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 

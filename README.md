@@ -7,7 +7,8 @@
 </a>
 
 ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
-[⬅️ Read The Source](install.bat) | [➡️ Setup Requirements](SETUP.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+
+#### <div align="center">[⬅️ Read The Source](install.bat) | [➡️ Setup Requirements](SETUP.md) | [➡️ LEGAL](LEGAL.md) | [➡️ CVBGOD Guide](CVBGOD.md) </div>
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
 <img 
@@ -77,6 +78,6 @@ CYBORG.DECLARATION: CVBGOD: LIBS_DELIVERED
 
 ---
 ```
-[⬅️ Read The Source](install.bat) | [➡️ Setup Requirements](SETUP.md) | [➡️ CVBGOD Guide](CVBGOD.md)
+[⬅️ Read The Source](install.bat) | [➡️ Setup Requirements](SETUP.md) | [➡️ LEGAL](LEGAL.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 

@@ -42,9 +42,18 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
   
 ---
 
-### 🌍 Now the OFFICIAL Mercwar MAIN README.md...
+### 🌍 ... AND Now the OFFICIAL Mercwar MAIN README.md FOR🌟
 
-#### 🎖 FOR <i>GGML LLAMA GGUF LLM AI FIRE-GEM </i>GOOD LUCK!
+####  <i>
+- GGML 
+- LLAMA 
+- GGUF 
+- LLM 
+- AI 
+- FIRE-GEM 
+</i>
+
+🎖 GOOD LUCK! 🎖
 
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">

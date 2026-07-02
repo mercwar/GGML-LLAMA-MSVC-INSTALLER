@@ -6,7 +6,8 @@
 />
 </a>
 
- ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
+### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
+[⬅️ Read The Source](INSTALL.md) | [➡️ Setup Requirements](SETUP.md)
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">
 <img 
@@ -16,8 +17,6 @@
 />
 </a>
 
-
-[⬅️ Read The Source](INSTALL.md) | [➡️ Setup Requirements](SETUP.md)
 
 # 📁 **FireGem Documentation System (Hybrid Edition)**
 

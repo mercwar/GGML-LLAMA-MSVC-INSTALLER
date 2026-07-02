@@ -33,14 +33,25 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
    LEGAL.md                 ← Legal & Sovereign Charter
 ```
 
-Every file links to every other file.  
-Every file has a “Back to Main” link.  
-Every file has a TOC.
+🌈 How to use README
 
+- Every file links to every other file.  
+- Every file has a “Back to Main” link.  
+- Every file has a TOC.
+- Follow the tutorial.
+  
 ---
 
-# 📘 **MAIN README.md**
+#### 📘 Now the OFFICIAL Mercwar GGML LLAMA GGUF LLM AI  FIRE-GEM MAIN README.md**
 
+
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="Copilot_20260701_231122" 
+    alt="Mercwar " 
+    style="width:100%; height:auto;"
+/>
+</a>
 
 ###   Welcome to the FireGem GGML‑LLAMA‑MSVC Engine documentation system.  
 

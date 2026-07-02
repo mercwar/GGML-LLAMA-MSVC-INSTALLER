@@ -1,4 +1,4 @@
-[⬅️ Back to Main](README.md) 
+[⬅️ Read The Source](install.bat) | [➡️ CVBGOD Guide](CVBGOD.md)
 ---
 
 # ⚖️ **LEGAL.md**
@@ -77,4 +77,4 @@ Using FireGem implies acceptance.
 
 ---
 ```
-[⬅️ Back to Main](README.md) 
+[⬅️ Read The Source](install.bat) | [➡️ CVBGOD Guide](CVBGOD.md)

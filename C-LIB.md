@@ -162,12 +162,5 @@ See `LICENSE` for details.
 
 ---
 
-## 🚀 Contributing  
-Contributions are welcome — especially improvements to:
-
-- build system integration  
-- FireGem compatibility  
-- documentation  
-- platform support  
 
 [⬅️ Back to Main](README.md) | [➡️ Installation ](install.md) | [➡️ CVBGOD Guide](CVBGOD.md)

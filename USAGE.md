@@ -1,3 +1,4 @@
+[⬅️ Back to Main](README.md)
 # 🤖 **USAGE.md**
 
 ```markdown
@@ -175,7 +176,7 @@ Robots may compile, generate, and operate FireGem.
 Using FireGem implies acceptance.
 
 ---
-
-[⬅️ Back to Main](README.md)
 ```
+[⬅️ Back to Main](README.md)
+
 

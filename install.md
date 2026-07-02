@@ -1,5 +1,13 @@
 [⬅️ Back to Main](README.md) | [➡️ Mercwar](https://mercwar01.byethost3.com) | [➡️ CVBGOD Guide](CVBGOD.md)
 
+<a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
+<img 
+    src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
+    alt="Mercwar Constellation" 
+    style="width:100%; height:auto;"
+/>
+</a>
+
 ## 🔧 FireGem / Llama.cpp MSVC Build System (Client Installer)
 
 This batch file installs all required build tools, clones `llama.cpp` if missing, configures it with MSVC + Ninja, builds the project, and runs tests.  

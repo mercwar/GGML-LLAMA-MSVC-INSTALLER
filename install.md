@@ -5,6 +5,8 @@
 This batch file installs all required build tools, clones `llama.cpp` if missing, configures it with MSVC + Ninja, builds the project, and runs tests.  
 Users simply copy/paste or click the GitHub copy button to run it.
 
+💻 MS SHELL
+
 ```bat
 @echo off
 echo ============================================================

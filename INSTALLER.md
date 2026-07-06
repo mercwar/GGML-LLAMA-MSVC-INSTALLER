@@ -11,7 +11,7 @@
 
 # 🛠 **INSTALLER.md**
 
-```markdown
+
 # 🛠 FireGem Installer Guide
 
 This guide explains how to run the MSVC batch installer and what it does.
@@ -70,7 +70,7 @@ After installation:
 3. Use Copilot to generate your assistant  
 
 ---
-```
+
 [⬅️ Back to Main](README.md) |  [➡️ Usage Guide](USAGE.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar01.byethost3.com">

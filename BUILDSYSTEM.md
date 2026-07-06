@@ -8,7 +8,6 @@
 />
 </a>
 
-# 🏗️ **BUILDSYSTEM.md**
 
 
 # 🏗️ FireGem Build System

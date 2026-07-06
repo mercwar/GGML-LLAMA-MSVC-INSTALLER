@@ -11,7 +11,7 @@
 
 # 🤖 **USAGE.md**
 
-```markdown
+
 # 🤖 FireGem Usage Guide
 
 ---

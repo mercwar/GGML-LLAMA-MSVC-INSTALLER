@@ -23,7 +23,7 @@ This guide explains how to run the MSVC batch installer and what it does.
 - [Installer Overview](#installer-overview)
 - [What the Installer Installs](#what-the-installer-installs)
 - [Running the Installer](#running-the-installer)
-- [Post‑Install Steps](#post-install-steps)
+- [Install Steps](#install-steps)
 - [Back to Main](README.md)
 
 ---
@@ -61,7 +61,7 @@ GGML-LLAMA-MSVC-INSTALLER.bat
 
 ---
 
-## Post‑Install Steps
+## Install Steps
 
 After installation:
 

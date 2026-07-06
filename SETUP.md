@@ -8,9 +8,6 @@
 />
 </a>
 
-# 🔧 **SETUP.md**
-
-
 # 🔧 FireGem Setup Requirements
 
 ---

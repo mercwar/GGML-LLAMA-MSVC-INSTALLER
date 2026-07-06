@@ -9,8 +9,6 @@
 </a>
 
 
-# 🤖 **USAGE.md**
-
 
 # 🤖 FireGem Usage Guide
 

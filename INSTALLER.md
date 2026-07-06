@@ -9,9 +9,6 @@
 </a>
 
 
-# 🛠 **INSTALLER.md**
-
-
 # 🛠 FireGem Installer Guide
 
 This guide explains how to run the MSVC batch installer and what it does.

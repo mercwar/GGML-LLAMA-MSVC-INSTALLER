@@ -10,7 +10,7 @@
 
 # 🔧 **SETUP.md**
 
-```markdown
+
 # 🔧 FireGem Setup Requirements
 
 ---
@@ -90,7 +90,7 @@ Works with:
 - GGUF requires GGML + LLAMA  
 
 ---
-```
+
 
 [⬅️ Back to Main](README.md) | [➡️ Installer Guide](INSTALLER.md) | [➡️ CVBGOD Guide](CVBGOD.md)
 

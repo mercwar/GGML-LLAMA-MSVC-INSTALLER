@@ -74,7 +74,7 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 ---
 
 # 🔥 **LLM Command for Microsoft Copilot**  
-### (Give this to your users — they paste it directly into Copilot)
+### (Give this to your AI, paste it directly into Copilot or other AI)
 
 ```
 I have a compiled llama.cpp + ggml backend built with MSVC, including the C headers, the ggml core, the llama core, and GGUF model loading. I also have a GGUF model file ready.

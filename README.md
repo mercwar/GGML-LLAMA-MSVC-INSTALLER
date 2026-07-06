@@ -74,11 +74,12 @@ The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs
 ✔️ This system provides everything needed to ...
 
 - Install
-- Compile,
-- Understand,
-- Compile
+- Compile...
+  
+- Include
+- Compile...
 
-📡 The FireGem backend.
+📡 The Fire-Gem LLM backend.
 
 
 <a target="_self" title="MERCWAR AI" href="https://mercwar01.byethost3.com">

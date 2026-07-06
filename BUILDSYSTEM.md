@@ -10,7 +10,7 @@
 
 # 🏗️ **BUILDSYSTEM.md**
 
-```markdown
+
 # 🏗️ FireGem Build System
 
 ---
@@ -55,7 +55,7 @@ Into portable MSVC libs.
 - Ideal for robot runtimes  
 
 ---
-```
+
 
 
 ## Cyborg‑Lang Summary

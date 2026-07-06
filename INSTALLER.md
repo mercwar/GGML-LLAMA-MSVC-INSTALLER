@@ -55,9 +55,9 @@ The FireGem installer:
 
 Run:
 
-```
+
 GGML-LLAMA-MSVC-INSTALLER.bat
-```
+
 
 ---
 

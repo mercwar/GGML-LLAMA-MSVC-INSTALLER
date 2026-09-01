@@ -2,147 +2,155 @@
 setlocal enabledelayedexpansion
 
 echo ============================================================
-echo   FireGem / Llama.cpp MSVC Build System (Client Installer)
+echo   FireGem / Llama.cpp MSVC Build System (Windows 11 Installer)
 echo ============================================================
 echo.
 
+REM ============================================================
+REM 1. ROOT DIRECTORY
+REM ============================================================
 set "ROOT=%~dp0"
 echo Installer root: %ROOT%
 cd /d "%ROOT%"
 
 REM ============================================================
-REM  1. DYNAMIC DEPENDENCY VERIFICATION VIA WINGET
+REM 2. SYSTEM DEPENDENCY ENGINE (Using String Matching Overrides)
 REM ============================================================
 echo Checking build requirements...
 
 where cmake >nul 2>&1
-if errorlevel 1 (
-    echo Installing CMake...
-    winget install --id Kitware.CMake --source winget --accept-package-agreements --accept-source-agreements
-    if errorlevel 1 set "ERR_MSG=Failed to install CMake package via winget." & goto error_menu
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ CMake found via Path.
+    goto check_ninja
 )
 
+echo CMake not active in Path. Testing registry...
+winget list --id Kitware.CMake >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ CMake registered. Injecting local binary targets...
+    set "PATH=%PATH%;C:\Program Files\CMake\bin"
+    goto check_ninja
+)
+
+echo CMake missing. Installing via winget...
+winget install Kitware.CMake --accept-package-agreements --accept-source-agreements
+set "PATH=%PATH%;C:\Program Files\CMake\bin"
+
+:check_ninja
 where ninja >nul 2>&1
-if errorlevel 1 (
-    echo Installing Windows Ninja...
-    winget install Ninja-build.Ninja --accept-package-agreements --accept-source-agreements
-    if errorlevel 1 set "ERR_MSG=Failed to install Ninja-build via winget." & goto error_menu
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Ninja found via Path.
+    goto check_git
 )
 
+echo Ninja not active in Path. Testing registry...
+winget list --id Ninja-build.Ninja >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Ninja registered. Injecting local binary targets...
+    set "PATH=%PATH%;%LOCALAPPDATA%\Microsoft\WinGet\Packages\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+    goto check_git
+)
+
+echo Ninja missing. Installing via winget...
+winget install Ninja-build.Ninja --accept-package-agreements --accept-source-agreements
+
+:check_git
 where git >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Git found via Path.
+    goto load_msvc
+)
+
+echo Git not active in Path. Testing registry...
+winget list --id Git.Git >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Git registered. Injecting local binary targets...
+    set "PATH=%PATH%;C:\Program Files\Git\cmd"
+    goto load_msvc
+)
+
+echo Git missing. Installing via winget...
+winget install Git.Git --accept-package-agreements --accept-source-agreements
+set "PATH=%PATH%;C:\Program Files\Git\cmd"
+
+REM ============================================================
+REM 3. MSVC ENVIRONMENT SETUP
+REM ============================================================
+:load_msvc
+echo Loading MSVC x64 compiler variables...
+if "%VSCMD_ARG_TGT_ARCH%" NEQ "x64" (
+    set "VCVARS_BAT=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+    if exist "!VCVARS_BAT!" (
+        call "!VCVARS_BAT!"
+    ) else (
+        echo ❌ Fatal Error: vcvars64.bat script could not be located.
+        pause
+        exit /b 1
+    )
+)
+
+where cl.exe >nul 2>&1
 if errorlevel 1 (
-    echo Installing Git for Windows...
-    winget install --id Git.Git --source winget --accept-package-agreements --accept-source-agreements
-    if errorlevel 1 set "ERR_MSG=Failed to install Git via winget." & goto error_menu
-    echo [CRITICAL] Git was installed. Please RESTART your MSVC Command Prompt window and rerun this script.
+    echo ❌ Fatal Error: MSVC cl.exe cross-compiler was not flagged in session memory.
+    pause
+    exit /b 1
+)
+echo ✅ MSVC x64 Native Compiler active.
+
+REM ============================================================
+REM 4. CODEBASE INITIALIZATION
+REM ============================================================
+set "LLAMA_DIR=%ROOT%llama.cpp"
+echo Target directory location: %LLAMA_DIR%
+
+if not exist "%LLAMA_DIR%" (
+    echo Initializing fresh git clone pass...
+    git clone https://github.com "%LLAMA_DIR%"
+)
+
+cd /d "%LLAMA_DIR%"
+if exist build rmdir /s /q build
+
+REM ============================================================
+REM 5. CONFIGURATION & COMPILATION STAGE
+REM ============================================================
+echo Deploying CMake meta-build trees under Ninja architecture...
+cmake -B build -G Ninja -D CMAKE_BUILD_TYPE=Release -D LLAMA_BUILD_EXAMPLES=ON -D LLAMA_BUILD_TESTS=ON
+if errorlevel 1 (
+    echo ❌ System Configuration Fault: CMake generation sequence dropped out.
+    pause
+    exit /b 1
+)
+
+echo Running optimization compilation steps under cl.exe...
+cmake --build build --config Release
+if errorlevel 1 (
+    echo ❌ Hardware Compilation Fault: Binary linker sequence aborted.
     pause
     exit /b 1
 )
 
 REM ============================================================
-REM  2. STRICT MSVC X64 ENVIRONMENT ENFORCER
+REM 6. VERIFICATION RUNTIME CHECK
 REM ============================================================
-if "%VSCMD_ARG_TGT_ARCH%" NEQ "x64" (
-    echo Loading native x64 MSVC compilation environment...
-    set "VCVARS_BAT=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
-    if exist "!VCVARS_BAT!" (
-        call "!VCVARS_BAT!"
-        if errorlevel 1 set "ERR_MSG=vcvars64.bat environment initialization script aborted with errors." & goto error_menu
-    ) else (
-        set "ERR_MSG=Native x64 MSVC toolchain configuration utility could not be found at specified path."
-        goto error_menu
-    )
-) else (
-    echo Native x64 MSVC environment confirmed.
-)
-
-REM ============================================================
-REM  3. CORE REPOSITORY INITIALIZATION
-REM ============================================================
-set "LLAMA_DIR=%ROOT%llama.cpp"
-echo Checking source destination: %LLAMA_DIR%
-
-if not exist "%LLAMA_DIR%" (
-    echo Cloning fresh ggerganov/llama.cpp codebase...
-    git clone https://github.com/ggerganov/llama.cpp "%LLAMA_DIR%"
+echo Running operational integrity diagnostics...
+if exist "build\bin\llama-cli.exe" (
+    "build\bin\llama-cli.exe" -h >nul 2>&1
     if errorlevel 1 (
-        set "ERR_MSG=Source repository tree retrieval failed during git clone operations."
-        goto error_menu
+        echo ❌ Integrity Diagnostics Failed: Binary execution channel broke.
+        pause
+        exit /b 1
     )
-)
-
-cd /d "%LLAMA_DIR%"
-if exist build rmdir /S /Q build
-
-REM ============================================================
-REM  4. CORRECT DYNAMIC ENVIRONMENT GENERATION AND BUILD
-REM ============================================================
-echo Configuring workspace engine using active x64 tool variables...
-
-cmake -B build -G Ninja ^
-  -D CMAKE_BUILD_TYPE=Release ^
-  -D CMAKE_C_COMPILER=cl.exe ^
-  -D CMAKE_CXX_COMPILER=cl.exe ^
-  -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded ^
-  -D LLAMA_BUILD_EXAMPLES=ON ^
-  -D LLAMA_BUILD_TESTS=ON
-
-if errorlevel 1 (
-    set "ERR_MSG=CMake workspace compilation directory tree configuration step failed."
-    goto error_menu
-)
-
-echo Building application binaries...
-cmake --build build --config Release
-
-if errorlevel 1 (
-    set "ERR_MSG=MSVC compiler engine cl.exe threw a fatal structural building error."
-    goto error_menu
+    echo ✅ Operational Verification Completed Clean.
+) else (
+    echo ❌ Target Deployment Error: Optimized compiler binary was not found.
+    pause
+    exit /b 1
 )
 
 echo ============================================================
-echo   BUILD COMPLETED SUCCESSFULLY
+echo   ⚡ TARGET MATRIX BUILT SUCCESSFULLY - ALL WORKSPACES LINKED
 echo ============================================================
 echo.
 pause
 exit /b 0
-
-REM ============================================================
-REM  ERROR MENU HANDLING BLOCK
-REM ============================================================
-:error_menu
-echo.
-echo ============================================================
-echo ❌ ERROR DETECTED IN PIPELINE STREAM
-echo ============================================================
-echo Description: %ERR_MSG%
-echo ============================================================
-echo.
-echo [1] Restart the compilation installer sequence
-echo [2] Launch text file in Notepad to inspect paths
-echo [3] Terminate script execution channel
-echo.
-set /p "CHOICE=Select a processing action line (1-3): "
-
-if "%CHOICE%"=="1" (
-    echo Re-initializing build system tracks...
-    goto :begin_INTROMENU
-)
-if "%CHOICE%"=="2" (
-    echo Launching script context workspace in background...
-    start notepad.exe "%~f0"
-    pause
-    goto error_menu
-)
-if "%CHOICE%"=="3" (
-    echo Terminating shell attachment...
-    exit /b 1
-)
-
-echo Invalid entry token provided. Re-routing back to display screen...
-goto error_menu
-
-:begin_INTROMENU
-cd /d "%ROOT%"
-cls
-goto :EOF

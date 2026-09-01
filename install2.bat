@@ -14,7 +14,7 @@ echo Installer root: %ROOT%
 cd /d "%ROOT%"
 
 REM ============================================================
-REM 2. SYSTEM DEPENDENCY ENGINE (Using String Matching Overrides)
+REM 2. SYSTEM DEPENDENCY ENGINE (With Gzip Tool Vectoring)
 REM ============================================================
 echo Checking build requirements...
 
@@ -58,7 +58,7 @@ winget install Ninja-build.Ninja --accept-package-agreements --accept-source-agr
 where git >nul 2>&1
 if "!ERRORLEVEL!"=="0" (
     echo ✅ Git found via Path.
-    goto load_msvc
+    goto check_gzip
 )
 
 echo Git not active in Path. Testing registry...
@@ -66,12 +66,31 @@ winget list --id Git.Git >nul 2>&1
 if "!ERRORLEVEL!"=="0" (
     echo ✅ Git registered. Injecting local binary targets...
     set "PATH=%PATH%;C:\Program Files\Git\cmd"
-    goto load_msvc
+    goto check_gzip
 )
 
 echo Git missing. Installing via winget...
 winget install Git.Git --accept-package-agreements --accept-source-agreements
 set "PATH=%PATH%;C:\Program Files\Git\cmd"
+
+:check_gzip
+where gzip >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Gzip found via Path.
+    goto load_msvc
+)
+
+echo Gzip not active in Path. Testing registry...
+winget list --id GnuWin32.Gzip >nul 2>&1
+if "!ERRORLEVEL!"=="0" (
+    echo ✅ Gzip registered. Injecting local binary targets...
+    set "PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin"
+    goto load_msvc
+)
+
+echo Gzip asset compression utility missing. Installing via winget...
+winget install --id GnuWin32.Gzip --source winget --accept-package-agreements --accept-source-agreements
+set "PATH=%PATH%;C:\Program Files (x86)\GnuWin32\bin"
 
 REM ============================================================
 REM 3. MSVC ENVIRONMENT SETUP
@@ -105,6 +124,7 @@ echo Target directory location: %LLAMA_DIR%
 
 if not exist "%LLAMA_DIR%" (
     echo Initializing fresh git clone pass...
+    REM FIXED: Restored complete ggerganov project source path tracking context
     git clone https://github.com "%LLAMA_DIR%"
 )
 

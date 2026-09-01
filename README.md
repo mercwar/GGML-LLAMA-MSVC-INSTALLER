@@ -8,6 +8,11 @@
 
 The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 
+#### NOTE:
+#### ➡️ Windows 11 FREASH START SCRIPT (NEW)
+##### Download The Alt. Win11 installer  - [Here](install2.bat)
+#### Run once to install Git, then run again , you should see llma.ccp and it will take a long time to compile the libs.
+
 ### <div align="center"> 🎉 Speak <i>Cyborg</i> to every ✨ <i>HuuMMin PuuTTin</i> 🤖 OUT THERE! 🪐 </div>
 
 #### <div align="center">[⬅️ Read The Source](install.bat) | [➡️ Tutorial ](SETUP.md) | [➡️ LEGAL](LEGAL.md) | [➡️ CVBGOD Guide](CVBGOD.md) </div>

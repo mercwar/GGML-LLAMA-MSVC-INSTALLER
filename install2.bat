@@ -19,18 +19,21 @@ where cmake >nul 2>&1
 if errorlevel 1 (
     echo Installing CMake...
     winget install --id Kitware.CMake --source winget --accept-package-agreements --accept-source-agreements
+    if errorlevel 1 set "ERR_MSG=Failed to install CMake package via winget." & goto error_menu
 )
 
 where ninja >nul 2>&1
 if errorlevel 1 (
     echo Installing Windows Ninja...
     winget install Ninja-build.Ninja --accept-package-agreements --accept-source-agreements
+    if errorlevel 1 set "ERR_MSG=Failed to install Ninja-build via winget." & goto error_menu
 )
 
 where git >nul 2>&1
 if errorlevel 1 (
     echo Installing Git for Windows...
     winget install --id Git.Git --source winget --accept-package-agreements --accept-source-agreements
+    if errorlevel 1 set "ERR_MSG=Failed to install Git via winget." & goto error_menu
     echo [CRITICAL] Git was installed. Please RESTART your MSVC Command Prompt window and rerun this script.
     pause
     exit /b 1
@@ -39,16 +42,15 @@ if errorlevel 1 (
 REM ============================================================
 REM  2. STRICT MSVC X64 ENVIRONMENT ENFORCER
 REM ============================================================
-REM Check if we are truly in a 64-bit host/target environment.
 if "%VSCMD_ARG_TGT_ARCH%" NEQ "x64" (
     echo Loading native x64 MSVC compilation environment...
     set "VCVARS_BAT=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
     if exist "!VCVARS_BAT!" (
         call "!VCVARS_BAT!"
+        if errorlevel 1 set "ERR_MSG=vcvars64.bat environment initialization script aborted with errors." & goto error_menu
     ) else (
-        echo ERROR: Native x64 MSVC toolchain configuration utility could not be found.
-        pause
-        exit /b 1
+        set "ERR_MSG=Native x64 MSVC toolchain configuration utility could not be found at specified path."
+        goto error_menu
     )
 ) else (
     echo Native x64 MSVC environment confirmed.
@@ -64,8 +66,8 @@ if not exist "%LLAMA_DIR%" (
     echo Cloning fresh ggerganov/llama.cpp codebase...
     git clone https://github.com/ggerganov/llama.cpp "%LLAMA_DIR%"
     if errorlevel 1 (
-        echo ERROR: Source tree retrieval failed.
-        exit /b 1
+        set "ERR_MSG=Source repository tree retrieval failed during git clone operations."
+        goto error_menu
     )
 )
 
@@ -77,7 +79,6 @@ REM  4. CORRECT DYNAMIC ENVIRONMENT GENERATION AND BUILD
 REM ============================================================
 echo Configuring workspace engine using active x64 tool variables...
 
-REM Added explicit Release build type optimization flag to speed up compilation
 cmake -B build -G Ninja ^
   -D CMAKE_BUILD_TYPE=Release ^
   -D CMAKE_C_COMPILER=cl.exe ^
@@ -87,18 +88,16 @@ cmake -B build -G Ninja ^
   -D LLAMA_BUILD_TESTS=ON
 
 if errorlevel 1 (
-    echo ERROR: Worktree configuration failed.
-    pause
-    exit /b 1
+    set "ERR_MSG=CMake workspace compilation directory tree configuration step failed."
+    goto error_menu
 )
 
 echo Building application binaries...
 cmake --build build --config Release
 
 if errorlevel 1 (
-    echo ERROR: Compilation sequence failed under cl.exe.
-    pause
-    exit /b 1
+    set "ERR_MSG=MSVC compiler engine cl.exe threw a fatal structural building error."
+    goto error_menu
 )
 
 echo ============================================================
@@ -106,3 +105,44 @@ echo   BUILD COMPLETED SUCCESSFULLY
 echo ============================================================
 echo.
 pause
+exit /b 0
+
+REM ============================================================
+REM  ERROR MENU HANDLING BLOCK
+REM ============================================================
+:error_menu
+echo.
+echo ============================================================
+echo ❌ ERROR DETECTED IN PIPELINE STREAM
+echo ============================================================
+echo Description: %ERR_MSG%
+echo ============================================================
+echo.
+echo [1] Restart the compilation installer sequence
+echo [2] Launch text file in Notepad to inspect paths
+echo [3] Terminate script execution channel
+echo.
+set /p "CHOICE=Select a processing action line (1-3): "
+
+if "%CHOICE%"=="1" (
+    echo Re-initializing build system tracks...
+    goto :begin_INTROMENU
+)
+if "%CHOICE%"=="2" (
+    echo Launching script context workspace in background...
+    start notepad.exe "%~f0"
+    pause
+    goto error_menu
+)
+if "%CHOICE%"=="3" (
+    echo Terminating shell attachment...
+    exit /b 1
+)
+
+echo Invalid entry token provided. Re-routing back to display screen...
+goto error_menu
+
+:begin_INTROMENU
+cd /d "%ROOT%"
+cls
+goto :EOF

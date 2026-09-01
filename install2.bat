@@ -73,11 +73,12 @@ cd /d "%LLAMA_DIR%"
 if exist build rmdir /S /Q build
 
 REM ============================================================
-REM  4. DYNAMIC ENVIROMENT GENERATION AND BUILD
+REM  4. FORCE X64 NATIVE GENERATION AND BUILD
 REM ============================================================
 echo Configuring workspace engine using active tool variables...
 
-cmake -B build -G Ninja ^
+REM Added -A x64 explicitly to smash the x86 host fallback bug and flag AVX2 vectors
+cmake -B build -G Ninja -A x64 ^
   -D CMAKE_C_COMPILER=cl.exe ^
   -D CMAKE_CXX_COMPILER=cl.exe ^
   -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded ^

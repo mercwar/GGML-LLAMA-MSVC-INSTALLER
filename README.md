@@ -7,7 +7,7 @@
 </a>
 
 - The Free MSVC Compiler can be downloaded from Microsoft [here](https://aka.ms/vs/17/release/vs_BuildTools.exe)
-- The Free MSVC Pre-Compiled GGML and LLAMA LIBS can be found [here](https:github.com/mercwar/Fire-Gem) in the Fire-Gem Repo.
+- The Free MSVC Pre-Compiled GGML and LLAMA LIBS can be found [here](../Fire-Gem) in the Fire-Gem Repo.
   
 #### NOTE:
 #### ➡️ Windows 11 FREASH START SCRIPT (NEW)

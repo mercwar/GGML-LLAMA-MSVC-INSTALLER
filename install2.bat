@@ -37,21 +37,22 @@ if errorlevel 1 (
 )
 
 REM ============================================================
-REM  2. SAFE MSVC ENVIRONMENT DETECTOR
+REM  2. STRICT MSVC X64 ENVIRONMENT ENFORCER
 REM ============================================================
-where cl.exe >nul 2>&1
-if errorlevel 1 (
-    echo Loading native MSVC variables...
-    set "MSVC_ENV=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat"
-    if exist "!MSVC_ENV!" (
-        call "!MSVC_ENV!" -arch:x64
+REM Check if we are truly in a 64-bit host/target environment.
+REM If VSCMD_ARG_TGT_ARCH is not x64, we MUST call vcvars64.bat to override it.
+if "%VSCMD_ARG_TGT_ARCH%" NEQ "x64" (
+    echo Loading native x64 MSVC compilation environment...
+    set "VCVARS_BAT=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+    if exist "!VCVARS_BAT!" (
+        call "!VCVARS_BAT!"
     ) else (
-        echo ERROR: Native MSVC tool chain variables could not be located automatically.
+        echo ERROR: Native x64 MSVC toolchain configuration utility could not be found.
         pause
         exit /b 1
     )
 ) else (
-    echo MSVC environment detection confirmed. Skipping context initialization layer...
+    echo Native x64 MSVC environment confirmed.
 )
 
 REM ============================================================
@@ -73,12 +74,13 @@ cd /d "%LLAMA_DIR%"
 if exist build rmdir /S /Q build
 
 REM ============================================================
-REM  4. FORCE X64 NATIVE GENERATION AND BUILD
+REM  4. CORRECT DYNAMIC ENVIRONMENT GENERATION AND BUILD
 REM ============================================================
-echo Configuring workspace engine using active tool variables...
+echo Configuring workspace engine using active x64 tool variables...
 
-REM Added -A x64 explicitly to smash the x86 host fallback bug and flag AVX2 vectors
-cmake -B build -G Ninja -A x64 ^
+REM Removed "-A x64" to stop Ninja generator panic. 
+REM Architecture is now cleanly handled by vcvars64.bat above.
+cmake -B build -G Ninja ^
   -D CMAKE_C_COMPILER=cl.exe ^
   -D CMAKE_CXX_COMPILER=cl.exe ^
   -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded ^

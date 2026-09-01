@@ -40,7 +40,6 @@ REM ============================================================
 REM  2. STRICT MSVC X64 ENVIRONMENT ENFORCER
 REM ============================================================
 REM Check if we are truly in a 64-bit host/target environment.
-REM If VSCMD_ARG_TGT_ARCH is not x64, we MUST call vcvars64.bat to override it.
 if "%VSCMD_ARG_TGT_ARCH%" NEQ "x64" (
     echo Loading native x64 MSVC compilation environment...
     set "VCVARS_BAT=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
@@ -78,9 +77,9 @@ REM  4. CORRECT DYNAMIC ENVIRONMENT GENERATION AND BUILD
 REM ============================================================
 echo Configuring workspace engine using active x64 tool variables...
 
-REM Removed "-A x64" to stop Ninja generator panic. 
-REM Architecture is now cleanly handled by vcvars64.bat above.
+REM Added explicit Release build type optimization flag to speed up compilation
 cmake -B build -G Ninja ^
+  -D CMAKE_BUILD_TYPE=Release ^
   -D CMAKE_C_COMPILER=cl.exe ^
   -D CMAKE_CXX_COMPILER=cl.exe ^
   -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded ^

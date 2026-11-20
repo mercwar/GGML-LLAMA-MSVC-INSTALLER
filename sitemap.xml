@@ -4,9 +4,6 @@
     <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/LEGAL.md</loc>
   </url>
   <url>
-    <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/AVIS-DATALAKE.md</loc>
-  </url>
-  <url>
     <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/install2.bat</loc>
   </url>
   <url>
@@ -56,6 +53,9 @@
   </url>
   <url>
     <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/index.html</loc>
+  </url>
+  <url>
+    <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/.gitmodules</loc>
   </url>
   <url>
     <loc>https://github.com/mercwar/GGML-LLAMA-MSVC-INSTALLER/blob/main/ChatGPT%20Image%20Jul%201,%202026,%2010_29_42%20PM.png</loc>
